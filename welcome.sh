@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 bash homebrew_install.sh && bash preferences.sh
 
