@@ -1,10 +1,7 @@
 #!/bin/bash
-
 bash homebrew_install.sh && bash preferences.sh
 
-
 # Symlink dotfiles
-
 rm -i ~/.bash_profile
 ln -s ~/code/dotfiles/bash_profile ~/.bash_profile
 
