@@ -12,7 +12,7 @@ source ~/.passwords.bash
 source ~/.ssh_shortcuts.bash
 
 alias bashme="atom ~/.bash_profile"
-alias rm='rm -i'
+alias rm='rm -i -v'
 
 # Configure colors, if available.
 if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
