@@ -11,11 +11,6 @@
 [color]
 	ui = always
 
-[alias]
-	gsp =git smart-pull
-	gl = git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-	gs = git status
-
 [filter "media"]
 	required = true
 	clean = git media clean %f

@@ -16,3 +16,6 @@ ln -s ~/code/dotfiles/gitignore ~/.gitignore
 
 rm -i ~/.irbrc
 ln -s ~/code/dotfiles/irbrc ~/.irbrc
+
+rm -i ~/.aliases
+ln -s ~/code/dotfiles/aliases ~/.aliases.bash
