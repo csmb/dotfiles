@@ -55,7 +55,7 @@ git_prompt ()
     echo "[$git_color$GIT_BRANCH$c_reset] "
 }
 
-PROMPT_COMMAND="PS1=\"\$(git_prompt)${c_path}\u${c_reset} ${c_path}\w${c_reset} ⚡️⚡️ :: \" ;"
+PROMPT_COMMAND="PS1=\"\$(git_prompt)${c_path}\u${c_reset} ${c_path}\w${c_reset} :: \" ;"
 
 # Weather on the top of my terminal
 URL='http://www.accuweather.com/en/us/san-francisco-ca/94131/weather-forecast/39400_pc'
