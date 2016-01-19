@@ -1,5 +1,5 @@
 #!/bin/bash
-# bash homebrew_install.sh && bash preferences.sh
+bash homebrew_install.sh && bash preferences.sh
 
 # Symlink dotfiles
 [ -f ~/.bash_profile ] && rm -i ~/.bash_profile || echo "Creating .bash_profile"
