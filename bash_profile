@@ -15,8 +15,7 @@ source ~/.aliases.bash
 # Configure colors, if available.
 if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
     c_reset='\[\e[0m\]'
-    c_user='\[\e[1;31m\]'
-    c_user='\[\e[1;31m\]'
+    c_user='\[\e[0;32m\]'
     c_path='\[\e[0;34m\]'
     c_git_clean='\[\e[0;36m\]'
     c_git_staged='\[\e[0;32m\]'
@@ -55,7 +54,7 @@ git_prompt ()
     echo "[$git_color$GIT_BRANCH$c_reset] "
 }
 
-PROMPT_COMMAND="PS1=\"\$(git_prompt)${c_path}\u${c_reset} ${c_path}\w${c_reset} :: \" ;"
+PROMPT_COMMAND="PS1=\"\$(git_prompt)${c_user}\u${c_reset} ${c_path}\w${c_reset} :: \" ;"
 
 # Weather on the top of my terminal
 URL='http://www.accuweather.com/en/us/san-francisco-ca/94131/weather-forecast/39400_pc'
