@@ -19,7 +19,7 @@ if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
     c_path='\[\e[0;34m\]'
     c_git_clean='\[\e[0;36m\]'
     c_git_staged='\[\e[0;32m\]'
-    c_git_unstaged='\[\e[0;31m\]'
+    c_git_unstaged='\[\e[0;35m\]'
 else
     c_reset=
     c_user=
