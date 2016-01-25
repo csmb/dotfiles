@@ -9,3 +9,4 @@ alias gd="git diff"
 
 # Rails aliases
 alias RT="RAILS_ENV=test rake db:reset"
+alias RD="RAILS_ENV=developent rake db:reset"

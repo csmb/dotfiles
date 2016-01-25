@@ -7,10 +7,10 @@ export EDITOR="atom -nw"
 # initialize rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
+source ~/.aliases.bash
 source ~/.git-completion.bash
 source ~/.passwords.bash
 source ~/.ssh_shortcuts.bash
-source ~/.aliases.bash
 
 # Configure colors, if available.
 if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
