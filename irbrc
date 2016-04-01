@@ -8,6 +8,8 @@ begin
   AwesomePrint.irb!
   require 'pry'
   print "Using pry \n"
+  require 'current_temp'
+  print "Using current_temp\n"
 rescue LoadError => err
   warn "Couldn't load requirement: #{err}"
 end
