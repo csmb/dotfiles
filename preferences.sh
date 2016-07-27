@@ -7,8 +7,7 @@ sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.metadata.mds.pl
 # Enable the debug menu in Reminders (for manual refreshing)
 defaults write com.apple.reminders RemindersDebugMenu -boolean true
 
-## SANE HISTORY DEFAULTS via https://github.com/mrzool/bash-sensible ##
-
+# SANE HISTORY DEFAULTS via https://github.com/mrzool/bash-sensible
 # Append to the history file, don't overwrite it
 shopt -s histappend
 
