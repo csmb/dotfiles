@@ -19,3 +19,7 @@ ln -s ~/code/dotfiles/irbrc ~/.irbrc
 
 [ -f ~/.aliases.bash ] && rm -i ~/.aliases.bash || echo "Creating .aliases"
 ln -s ~/code/dotfiles/aliases ~/.aliases.bash
+
+echo "***************************"
+echo "All done!"
+echo "***************************"
