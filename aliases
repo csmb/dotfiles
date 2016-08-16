@@ -1,7 +1,5 @@
 # Docker
-if [ -f ~/Users/cbunting/platform-docker ]; then
-  alias dockerme="docker-machine start default && export DOCKER_IP=$(docker-machine ip) && eval $(docker-machine env) && echo $DOCKER_IP"
-fi
+# alias dockerme="docker-machine start default ; export DOCKER_IP=$(docker-machine ip) && eval $(docker-machine env) && echo $DOCKER_IP"
 
 # Git
 alias gsp="git smart-pull"
