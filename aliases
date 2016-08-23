@@ -1,6 +1,3 @@
-# Docker
-# alias dockerme="docker-machine start default ; export DOCKER_IP=$(docker-machine ip) && eval $(docker-machine env) && echo $DOCKER_IP"
-
 # Git
 alias gsp="git smart-pull"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
@@ -18,4 +15,4 @@ alias rm="rm -i -v"
 alias reload!="source ~/.bash_profile"
 alias be="bundle exec"
 alias blowaway="atom ~/Desktop/blow_away.sh"
-alias tree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'" 
+alias tree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'"
