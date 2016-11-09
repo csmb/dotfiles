@@ -15,7 +15,7 @@ echo "**************************************************************************
 
 brew install brew-cask geoip libevent mongodb node phantomjs rabbitmq readline ruby-build wget autoconf \
              elasticsearch git memcached mysql openssl pkg-config rbenv redis htop-osx ffmpeg cowsay \
-             diff-so-fancy
+             diff-so-fancy wget elixir
 
 echo "***************************************************************************************************"
 echo "Complete!"
