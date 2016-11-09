@@ -6,8 +6,8 @@ alias gd="git diff --color | diff-so-fancy"
 alias gco="git checkout"
 
 # Rails
-alias RT="RAILS_ENV=test rake db:reset"
-alias RD="RAILS_ENV=development rake db:reset"
+alias RT="RAILS_ENV=test be rake db:reset"
+alias RD="RAILS_ENV=development be rake db:reset"
 
 # Other
 alias bashme="atom ~/code/dotfiles"
