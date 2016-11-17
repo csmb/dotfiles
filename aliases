@@ -8,6 +8,8 @@ alias gco="git checkout"
 # Rails
 alias RT="RAILS_ENV=test be rake db:reset"
 alias RD="RAILS_ENV=development be rake db:reset"
+alias RTM="RAILS_ENV=test be rake db:migrate"
+alias RDM="RAILS_ENV=development be rake db:migrate"
 
 # Other
 alias bashme="atom ~/code/dotfiles"
