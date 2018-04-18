@@ -1,6 +1,7 @@
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 export PATH=$PATH:/usr/local/sbin
+export PATH="/usr/local/opt/node@6/bin:$PATH"
 
 export EDITOR="atom -nw"
 
