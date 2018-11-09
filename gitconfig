@@ -1,26 +1,26 @@
 [user]
-	name = Christopher Bunting
-	email = christophersbunting@gmail.com
+  name = Christopher Bunting
+  email = christophersbunting@gmail.com
 
 [push]
-	default = current
+  default = current
 
 [rerere]
-	enabled = true
+  enabled = true
 
 [color]
-	ui = always
+  ui = always
 
 [filter "media"]
-	required = true
-	clean = git media clean %f
-	smudge = git media smudge %f
+  required = true
+  clean = git media clean %f
+  smudge = git media smudge %f
 
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
 
 [filter "lfs"]
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
+  required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
