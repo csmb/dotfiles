@@ -2,6 +2,7 @@
 alias gsp="git smart-pull"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gs="git status"
+alias gss="git status && gl -n5"
 alias gd="git diff --color | diff-so-fancy"
 alias gco="git checkout"
 
