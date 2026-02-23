@@ -13,7 +13,7 @@ alias RTM="RAILS_ENV=test be rake db:migrate"
 alias RDM="RAILS_ENV=development be rake db:migrate"
 
 # Other
-alias bashme="atom ~/code/dotfiles"
+alias bashme="subl ~/code/dotfiles"
 alias rm="rm -i -v"
 alias reload!="source ~/.bash_profile"
 alias be="bundle exec"
