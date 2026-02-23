@@ -18,7 +18,7 @@ echo "**************************************************************************
 #   brew tap elastic/tap && brew install elastic/tap/elasticsearch-full
 
 brew install geoip libevent node rabbitmq readline ruby-build wget autoconf \
-             git memcached mysql openssl pkg-config rbenv redis htop ffmpeg cowsay \
+             git memcached mysql openssl pkg-config rbenv redis mactop ffmpeg cowsay \
              diff-so-fancy elixir
 
 echo "***************************************************************************************************"
