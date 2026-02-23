@@ -6,16 +6,20 @@
 if test ! $(which brew)
 then
   echo "Installing Homebrew for you."
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 echo "***************************************************************************************************"
 echo "Installng packages:"
 echo "***************************************************************************************************"
 
-brew install brew-cask geoip libevent mongodb node phantomjs rabbitmq readline ruby-build wget autoconf \
-             elasticsearch git memcached mysql openssl pkg-config rbenv redis htop-osx ffmpeg cowsay \
-             diff-so-fancy wget elixir
+# Note: mongodb and elasticsearch require additional taps — install separately if needed:
+#   brew tap mongodb/brew && brew install mongodb-community
+#   brew tap elastic/tap && brew install elastic/tap/elasticsearch-full
+
+brew install geoip libevent node rabbitmq readline ruby-build wget autoconf \
+             git memcached mysql openssl pkg-config rbenv redis htop ffmpeg cowsay \
+             diff-so-fancy elixir
 
 echo "***************************************************************************************************"
 echo "Complete!"

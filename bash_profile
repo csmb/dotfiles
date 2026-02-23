@@ -6,9 +6,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 export BASH_SILENCE_DEPRECATION_WARNING=1
 export PATH=$PATH:/usr/local/sbin
-export PATH="$PATH:/usr/local/opt/node@6/bin"
-
-export EDITOR="atom -nw"
+export EDITOR="subl -w"
 
 # initialize rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi

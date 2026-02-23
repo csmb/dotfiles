@@ -1,24 +1,26 @@
 #!/bin/bash
-bash homebrew_install.sh && bash preferences.sh
+DOTFILES_DIR="$(cd "$(dirname "$0")" && pwd)"
+
+bash "$DOTFILES_DIR/homebrew_install.sh" && bash "$DOTFILES_DIR/preferences.sh"
 
 # Symlink dotfiles
 [ -f ~/.bash_profile ] && rm -i ~/.bash_profile || echo "Creating .bash_profile"
-ln -s ~/code/dotfiles/bash_profile ~/.bash_profile
+ln -s "$DOTFILES_DIR/bash_profile" ~/.bash_profile
 
-[ -f ~/.git_completion.bash ] && rm -i ~/.git_completion.bash || echo "Creating .git_completion.bash"
-ln -s ~/code/dotfiles/git-completion ~/.git-completion.bash
+[ -f ~/.git-completion.bash ] && rm -i ~/.git-completion.bash || echo "Creating .git-completion.bash"
+ln -s "$DOTFILES_DIR/git-completion" ~/.git-completion.bash
 
-[ -f ~/.gitconfig.bash ] && rm -i ~/.gitconfig.bash || echo "Creating .gitconfig"
-ln -s ~/code/dotfiles/gitconfig ~/.gitconfig
+[ -f ~/.gitconfig ] && rm -i ~/.gitconfig || echo "Creating .gitconfig"
+ln -s "$DOTFILES_DIR/gitconfig" ~/.gitconfig
 
 [ -f ~/.gitignore ] && rm -i ~/.gitignore || echo "Creating .gitignore"
-ln -s ~/code/dotfiles/gitignore ~/.gitignore
+ln -s "$DOTFILES_DIR/gitignore" ~/.gitignore
 
-[ -f ~/.irbrc.bash ] && rm -i ~/.irbrc.bash || echo "Creating .irbrc"
-ln -s ~/code/dotfiles/irbrc ~/.irbrc
+[ -f ~/.irbrc ] && rm -i ~/.irbrc || echo "Creating .irbrc"
+ln -s "$DOTFILES_DIR/irbrc" ~/.irbrc
 
 [ -f ~/.aliases.bash ] && rm -i ~/.aliases.bash || echo "Creating .aliases"
-ln -s ~/code/dotfiles/aliases ~/.aliases.bash
+ln -s "$DOTFILES_DIR/aliases" ~/.aliases.bash
 
 echo "***************************"
 echo "All done!"
